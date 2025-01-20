@@ -1,3 +1,5 @@
+// importent write code again
+
 // Questions array
 const questions = [
   {
