@@ -112,6 +112,6 @@ window.addEventListener('load', function() {
   const savedScore = localStorage.getItem('score');
   if (savedScore) {
     const scoreElement = document.getElementById("score");
-    scoreElement.textContent = `Your score is ${savedScore} out of ${questions.length}`;
+    scoreElement.textContent = `Your score is ${savedScore} out of ${questions.length}.`;
   }
 });
