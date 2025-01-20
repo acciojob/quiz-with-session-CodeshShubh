@@ -92,7 +92,7 @@ function calculateScore() {
 
   // Display the score on the page
   const scoreElement = document.getElementById("score");
-  scoreElement.textContent = `Your score is ${score} out of ${questions.length}`;
+  scoreElement.textContent = `Your score is ${score} out of ${questions.length}.`;
 
   // Save the score in localStorage
   localStorage.setItem('score', score);
@@ -114,6 +114,6 @@ window.addEventListener('load', function() {
   const savedScore = localStorage.getItem('score');
   if (savedScore) {
     const scoreElement = document.getElementById("score");
-    scoreElement.textContent = "Your score is 3 out of 5.";
+    scoreElement.textContent = `Your score is ${savedScore} out of ${questions.length}.`;
   }
 });
